@@ -53,7 +53,7 @@ public class Arrays {
 		return suma;
 	}
 	
-	public void nuevometodo1() {
+	public void nuevometodo2() {
 		
 	}
 	
