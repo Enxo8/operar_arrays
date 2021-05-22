@@ -31,5 +31,32 @@ public class Arrays {
 			System.out.println("]");
 		}
 	}
+	
+	public static int[][] suma(int[][] m1, int[][] m2) {
+
+		int fila1 = m1.length;
+		int colum2= m2[0].length;
+		int suma [][] = new int [fila1][colum2];
+		if (fila1==colum2) {
+			for (int i = 0; i < m1.length; i++) {
+				for (int j = 0; j < m2[0].length; j++) {
+					for (int h = 0; h < m1[0].length; h++) {
+						suma[i][j] += m1[i][h]+m2[h][j];
+					}
+				}
+			}
+			imprimirMatriz(suma);
+		}else {
+			System.out.println("null");
+		}
+		
+		return suma;
+	}
+	
+	public void nuevometodo1() {
+		
+	}
+	
+	
 
 }
